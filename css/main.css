@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #323850;
+}
+
+.section-topbar {
+    top: 0;
+    width: 100%;
+    background-color: #df4244;
+    position: fixed;
+    z-index: 999;
+}
+
+.topbar-liner {
+    width: 100%;
+    background-color: #111;
+}
+
+.nav {
+    display: table;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.nav-item {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.parallax {
+    background-image: url("/images/parallax.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arvo', serif;
+    color: white;
+}
+
+.introduction {
+    position: absolute;
+    top: 35%;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+}
+
+.section-about {
+    height: 100%;
+}
+.about-image {
+    background-image: url("/images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.about-content {
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-left: 100px;
+}
+
+.about-title {
+    font-family: 'Arvo', serif;
+    font-size: 32px;
+    text-decoration: underline;
+    padding-top: 80px;
+}
+
+.about-paragraph {
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+}
+
+.about-resume {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    padding-right: 100px;
+}
+
+#resume-icon {
+    margin-right: 30px;
+}
+
+.section-work {
+    height: 70%;
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.work-card {
+    padding: 2%;
+/*    border: 3px solid #A32727;*/
+    border: 2px solid #444;
+}
+
+.workplace-name {
+    margin-bottom: 15px;
+}
+
+.work-description-container {
+    width: 40%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #111;
+    padding: 10px;
+    float: left;
+    margin-right: 30px;
+}
+
+.work-description-name {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.work-description-paragraph {
+    color: #333;
+}
+
+.skills-container {
+    float: left;
+}
+
+.skill-name {
+    font-size: 14px;
+}
+
+.skill-level {
+    height: 14px;
+    width: 50%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    float: left;
+}
+
+.section-projects {
+    height: 100%;
+    background-color: black;
+    padding: 5% 5%;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.project-slide {
+    text-align: center;
+}
+.project-image {
+    width: 100%;
+}
+
+.section-contact {
+    height: 70%;
+    padding: 5% 5%;
+}
+
+.contact-title {
+    text-align: center;
+}
