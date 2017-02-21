@@ -10,6 +10,10 @@ h2 {
     margin: 0;
 }
 
+p {
+    font-family: 'Josefin Slab', serif;
+}
+
 .link {
     text-decoration: none;
     color: #323850;
@@ -30,15 +34,30 @@ h2 {
 
 .nav {
     display: table;
-    width: 70%;
+    width: 75%;
     text-align: center;
     margin: 0 auto;
     padding: 15px;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    color: #df4244;
+}
+
+
 .nav-item {
     list-style-type: none;
-    font-size: 16px;
+    font-size: 14px;
+		padding: 0;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 .parallax {
@@ -62,36 +81,29 @@ h2 {
 }
 
 .section-about {
-    height: 100%;
+	background-color: #222;
 }
+
 .about-image {
     background-image: url("/images/about.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+		height: 100vh;
 }
 
 .about-content {
-    height: 100%;
-    background-color: #222;
     color: white;
-    padding-left: 100px;
 }
 
 .about-title {
     font-family: 'Arvo', serif;
     font-size: 32px;
     text-decoration: underline;
-    padding-top: 80px;
 }
 
 .about-paragraph {
-    font-family: 'Josefin Slab', serif;
     font-size: 20px;
-    padding-top: 40px;
-    padding-right: 100px;
-    padding-bottom: 40px;
 }
 
 .about-resume {
@@ -106,15 +118,21 @@ h2 {
 }
 
 .section-work {
-    height: 70%;
     width: 100%;
-    padding: 5% 5%;
+    padding: 4% 4%;
 }
 
 .work-card {
     padding: 2%;
 /*    border: 3px solid #A32727;*/
     border: 2px solid #444;
+    transition: box-shadow 0.75s, transform 0.75s;
+		float: left;
+}
+
+.work-card:hover {
+    box-shadow: 10px 10px 0 #333;
+    transform: translate(-10px, -10px);
 }
 
 .workplace-name {
@@ -123,7 +141,6 @@ h2 {
 
 .work-description-container {
     width: 40%;
-    height: 250px;
     border-radius: 10px;
     background-color: #111;
     padding: 10px;
@@ -135,6 +152,7 @@ h2 {
     color: white;
     font-size: 16px;
     margin-bottom: 12px;
+		float: left;
 }
 
 .work-description-paragraph {
@@ -142,29 +160,34 @@ h2 {
 }
 
 .skills-container {
-    float: left;
+		float: left;
+}
+
+.skill {
+	margin-bottom: 10px;
 }
 
 .skill-name {
     font-size: 14px;
+		margin-top: 0;
+		margin-bottom: 5px;
 }
 
 .skill-level {
     height: 14px;
-    width: 50%;
+    width: 100%;
     border: 1px solid #333;
     border-radius: 10px;
-    float: left;
 }
 
 .section-projects {
-    height: 100%;
-    background-color: black;
-    padding: 5% 5%;
+    background-color: #222;
+    padding: 4% 4%;
+    color: white;
 }
 
 .projects-title {
-    text-align: center;
+    text-decoration: underline;
 }
 
 .project-slide {
@@ -172,13 +195,31 @@ h2 {
 }
 .project-image {
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .section-contact {
-    height: 70%;
-    padding: 5% 5%;
+    padding: 4% 4%;
 }
 
 .contact-title {
-    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.employment-description {
+    overflow: hidden;
+    line-height: 2.5;
+}
+
+.section-title {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/***************Media queries******************/
+@media (max-width: 500px) {
+	.nav {
+		width: 100%;
+	}
 }
