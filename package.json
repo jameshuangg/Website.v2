@@ -1,0 +1,25 @@
+{
+  "name": "jameswebsite",
+  "version": "1.0.0",
+  "description": "This repository contains the second iteration of my personal website. In this website, I have utilized the following technologies:",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameshuangg/Website.v2.git"
+  },
+  "author": "James Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameshuangg/Website.v2/issues"
+  },
+  "homepage": "https://github.com/jameshuangg/Website.v2#readme"
+}
