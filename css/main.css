@@ -165,3 +165,33 @@ a:hover {
 	right: 0px;
 	transform: rotate(-30deg)
 }
+
+/********************************************
+	Projects Page CSS
+*/
+.project-image {
+	width: 100%;
+	background-color: white;
+	padding: 10px;
+}
+
+/********************************************
+	Contact Page CSS
+*/
+.contact-container {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contact-link {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+.contactLink-container {
+	margin-top: 30px;
+	border: 3px dotted #333;
+	padding: 0;
+}
