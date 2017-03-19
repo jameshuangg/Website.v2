@@ -23,7 +23,7 @@
 					title: "nanoPay",
 					position: "QA Engineer",
 					duration: "Jan 2017 - Apr 2017",
-					description: "Developed modular automation scripts that met the testing needs for the business and made future implementation easy. Took initiative and became an impactful role in web development."
+					description: "Developed modular automation scripts that met the testing needs for the business and made future implementation easy. Took initiative and joined the web development team to develop many web application products."
 				}
 			];
 			
