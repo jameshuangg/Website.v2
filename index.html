@@ -10,7 +10,7 @@
 			<!-- CSS -->
 			<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/main.css">
-			<link rel="stylesheet" href="css/animate.css">
+			<link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 			
 			<!-- fonts -->
 			<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 			<script type="text/javascript" src="js/app.js"></script>
 			<script type="text/javascript" src="js/appConfig.js"></script>
 			
+			
 			<!-- Controllers -->
 			<script type="text/javascript" src="js/controllers/mainCtrl.js"></script>
 			
@@ -37,14 +38,13 @@
     </head>
     
     <body class="mainBackground" ng-app="myWebsite">
-			<div class="content-container col-sm-offset-2 col-sm-8">
+			<div class="animated slideInUp content-container col-sm-offset-2 col-sm-8">
 				<!-- Navigation bar -->
 				<nav class="nav-size" ng-controller="mainCtrl as main">
 					<ul class="navigation-container">
-						<li ng-repeat="page in main.pages track by $index" class="navigation-item"><a ng-bind="page" ng-click="main.redirect($index)"></a></li>
+						<li ng-repeat="page in main.pages track by $index" class="navigation-item"><a ng-bind="page" ng-click="main.redirect($index)" ng-class="{'cross-out': main.checkState(page)}"></a></li>
 					</ul>
 				</nav>
-				
 				<!-- Routing Container -->
 				<ui-view class="fill"></ui-view>
 			</div>

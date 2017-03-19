@@ -58,8 +58,12 @@
 					name: 'C++',
 					level: '60%'
 				}
-			]
+			];
+			
+			// Used to detect which page you are currently on.
+			this.checkState = function(page) {
+				return page == $state.current.name;
+			};
 		}
-		
 	]);
 })();

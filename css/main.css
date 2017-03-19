@@ -62,6 +62,10 @@ a:hover {
 .description {
 	color: #666;
 }
+
+.cross-out {
+	text-decoration: line-through !important;
+}
 /********************************************
 	About Page CSS
 */
@@ -77,6 +81,18 @@ a:hover {
 	padding-left: 30px;
 	padding-right: 30px;
 	line-height: 1.6;
+}
+
+.resume-link {
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	border: 3px dotted #333;
+	margin-top: 20px;
+}
+
+.resume-icon {
+	margin-right: 10px;
 }
 
 /********************************************
