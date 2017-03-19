@@ -10,8 +10,8 @@
 				controller: 'mainCtrl',
 				controllerAs: 'main'
 			})
-			.state('Work', {
-				url: '/work',
+			.state('Employment', {
+				url: '/employment',
 				templateUrl: '../pages/work.html',
 				controller: 'mainCtrl',
 				controllerAs: 'main'

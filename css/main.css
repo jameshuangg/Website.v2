@@ -30,6 +30,7 @@
 .navigation-item {
 	display: table-cell;
 	text-align: center;
+	font-size: 16px;
 }
 
 .nav-size {
@@ -48,6 +49,19 @@
 	color: #D3D3D3;
 }
 
+a {
+	color: #22647E;
+	font-weight: 500;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.description {
+	color: #666;
+}
 /********************************************
 	About Page CSS
 */
@@ -63,4 +77,91 @@
 	padding-left: 30px;
 	padding-right: 30px;
 	line-height: 1.6;
+}
+
+/********************************************
+	Work Page CSS
+*/
+.work-info {
+	padding-left: 30px;
+	padding-right: 0px;
+}
+
+.workcard-wrapper {
+	border: 3px solid #333;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 80%;
+}
+
+.work-duration {
+	border: 2px solid #22647E;
+	padding: 5px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 0;
+}
+
+/********************************************
+	Skills Page CSS
+*/
+.skill-info {
+	height: 75%;
+	padding-left: 30px;
+}
+.y-axis {
+	height: 100%;
+}
+
+.y-axis-legend {
+	height: 20%;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.graph-container {
+	height: 100%;
+}
+
+.graphElement-container {
+	height: 100%;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.graphBar-container {
+	width: 100%;
+	height: 75%;
+}
+
+.graph {
+	height: 100%;
+	width: 60%;
+	float: right;
+	border: 2px solid black;
+	border-radius: 15px;
+	position: relative;
+}
+
+.graph-bar {
+	width: 100%;
+	background-color: #22647E;
+	border-radius: 15px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.graphText-container {
+	position: relative;
+	height: 10%;
+}
+
+.graphText {
+	position: absolute;
+	bottom: -10px;
+	right: 0px;
+	transform: rotate(-30deg)
 }

@@ -1,0 +1,16 @@
+<!-- Work Experience Content -->
+<div class="section row">
+	
+	<div class="col-sm-2 skill-info">
+		<table class="y-axis">
+			<tr class="y-axis-legend" ng-repeat="skillLevel in main.skillLevels">
+				<td ng-bind="skillLevel"></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="col-sm-10 graph-container">
+		<graphelement ng-repeat="skill in main.skills"></graphelement>
+	</div>
+	
+</div>

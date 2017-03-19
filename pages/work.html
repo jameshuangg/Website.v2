@@ -1,29 +1,13 @@
 <!-- Work Experience Content -->
-<div class="section-work container-fluid">
-	<div class="row">
-		<div class="col-sm-4">
-				<h2 class="section-title headings">employment</h2>
-				<p class="employment-description paragraph" >Currently looking for 4-month employment opportunities in mobile or web development. I strive to make impactful contributions to projects I am apart of.</p>
-		</div>
-		<div class="work-card col-sm-8" ng-repeat="job in main.employment">
-			<!-- Workplace name -->
-			<h2 class="workplace-name headings">{{job.employer}}: {{job.duration}}</h2>
-			<!-- Work description card -->
-			<div class="work-description-container col-xs-6 paragraph">
-				<h2 class="work-description-name headings" ng-bind="job.title"></h2>
-				<p class="work-description-paragraph paragraph" ng-bind="job.description"></p>
-			</div>
-			<!-- Skills utilized -->
-			<div class="skill-container col-xs-6">
-				<div class="skill" ng-repeat="skill in job.skills">
-					<h3 class="skill-name headings" ng-bind="skill.name"></h3>
-					<div class="skill-level-container">
-						<div class="skill-level" style="width:{{skill.level}}"></div>
-						<div class="skill-level-text paragraph" ng-bind="skill.level"></div>
-					</div>
-				</div>
-			</div>
-		</div>	
+<div class="section row">
+	
+	<div class="col-sm-4 work-info">
+			<h2>Employment</h2>
+			<p>Currently looking for 4-month employment opportunities in fullstack development and software engineering. I strive to make impactful contributions to projects I am apart of.</p>
+	</div>
+	
+	<div class="col-sm-8">
+		<workcard></workcard>
 	</div>
 
 </div>
