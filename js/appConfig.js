@@ -4,6 +4,12 @@
 		'$urlRouterProvider',
 		function($stateProvider, $urlRouterProvider) {
 			$stateProvider
+			.state('Home', {
+				url: '/',
+				templateUrl: '../pages/home.html',
+				controller: 'mainCtrl',
+				controllerAs: 'main'
+			})
 			.state('About', {
 				url: '/about',
 				templateUrl: '../pages/about.html',
@@ -13,12 +19,6 @@
 			.state('Employment', {
 				url: '/employment',
 				templateUrl: '../pages/work.html',
-				controller: 'mainCtrl',
-				controllerAs: 'main'
-			})
-			.state('Skills', {
-				url: '/skills',
-				templateUrl: '../pages/skills.html',
 				controller: 'mainCtrl',
 				controllerAs: 'main'
 			})
@@ -35,7 +35,7 @@
 				controllerAs: 'main'
 			});
 
-			$urlRouterProvider.otherwise('about');
+			$urlRouterProvider.otherwise('/');
 		}
 	]);
 })();

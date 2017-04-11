@@ -14,6 +14,7 @@
 			
 			<!-- fonts -->
 			<link href="css/font-awesome.min.css" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 			
 			<!-- Javascript -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -39,14 +40,16 @@
     
     <body class="mainBackground" ng-app="myWebsite">
 			<div class="animated slideInUp content-container col-sm-offset-2 col-sm-8">
+				<!-- Routing Container -->
+				<ui-view class="fill"></ui-view>
+				
 				<!-- Navigation bar -->
 				<nav class="nav-size" ng-controller="mainCtrl as main">
 					<ul class="navigation-container">
 						<li ng-repeat="page in main.pages track by $index" class="navigation-item"><a ng-bind="page" ng-click="main.redirect($index)" ng-class="{'cross-out': main.checkState(page)}"></a></li>
 					</ul>
 				</nav>
-				<!-- Routing Container -->
-				<ui-view class="fill"></ui-view>
+				
 			</div>
     </body>
 </html>
