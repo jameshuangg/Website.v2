@@ -1,12 +1,19 @@
 /********************************************
 	Global CSS
 */
+/*
+	Subcolor: #D3D3D3
+*/
 * {
 	font-family: 'Fredericka the Great', cursive;
 }
 
 h2 {
 	margin-top: 0px;
+}
+
+.sub-color {
+	color: #D3D3D3;
 }
 
 .mainBackground {
@@ -94,6 +101,7 @@ a:hover {
 
 .home-description {
 	font-size: 20px;
+	
 }
 /********************************************
 	About Page CSS
